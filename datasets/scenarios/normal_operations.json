@@ -1,0 +1,12 @@
+{
+  "id": "normal_operations",
+  "title": "Normal Operations",
+  "factory_id": "PLANT-A",
+  "asset_id": "PRESS-220",
+  "on_hand": 14,
+  "inbound": 0,
+  "base_demand": 10,
+  "allow_late": true,
+  "forbid_shortfall": false,
+  "event": null
+}

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="860" viewBox="0 0 1120 860" role="img" aria-labelledby="compTitle compDesc">
+<title id="compTitle">Process components and the trust boundary</title>
+<desc id="compDesc">The measured path is one Python process: FastAPI, an in-memory graph, OR-Tools, SQLite, and an in-process bus. Neo4j, Kafka, PostgreSQL, Docker Compose, and an industrial controller were not contacted. No timings are shown.</desc>
+<rect width="1120" height="860" fill="#f4f7fb"/>
+<rect width="1120" height="100" fill="#101820"/>
+<rect y="96" width="1120" height="4" fill="#0f6e6e"/>
+<text x="32" y="38" fill="#7dcec8" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">COMPONENTS</text>
+<text x="32" y="72" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="28" font-weight="700">What sits inside the process</text>
+<text x="1088" y="46" fill="#8fe0b8" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="end">one Python process</text>
+<text x="1088" y="70" fill="#c5d4e0" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13" text-anchor="end">no controller</text>
+<rect x="24" y="124" width="1072" height="430" rx="16" fill="#ffffff" stroke="#e1e8ef"/>
+<text x="48" y="156" fill="#1e3a5f" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">INSIDE THE PROCESS · MEASURED PATH</text>
+<rect x="48" y="180" width="320" height="156" rx="14" fill="#d9e3ec"/>
+<rect x="44" y="176" width="320" height="156" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<rect x="44" y="176" width="8" height="156" rx="4" fill="#0f5c6b"/>
+<text x="68" y="208" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">FastAPI</text>
+<text x="68" y="234" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Health, assets, graph, events</text>
+<text x="68" y="256" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Plans, approval, audit, metrics</text>
+<text x="68" y="278" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">OpenAPI from the same app</text>
+<text x="68" y="306" fill="#0f5c6b" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Reads are open. Writes need a bearer.</text>
+<rect x="392" y="180" width="320" height="156" rx="14" fill="#d9e3ec"/>
+<rect x="388" y="176" width="320" height="156" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<rect x="388" y="176" width="8" height="156" rx="4" fill="#1d4e89"/>
+<text x="412" y="208" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Operational graph</text>
+<text x="412" y="234" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">In memory for the demo and tests</text>
+<text x="412" y="256" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">190 entities · 1,027 relationships</text>
+<text x="412" y="278" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Seed 7 · current state only</text>
+<text x="412" y="306" fill="#1d4e89" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Cypher files are the server shape</text>
+<rect x="736" y="180" width="328" height="156" rx="14" fill="#d9e3ec"/>
+<rect x="732" y="176" width="328" height="156" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<rect x="732" y="176" width="8" height="156" rx="4" fill="#1f7a4d"/>
+<text x="756" y="208" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">OR-Tools CP-SAT</text>
+<text x="756" y="234" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Two-plant, two-period allocation</text>
+<text x="756" y="256" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Two-job schedule with no-overlap</text>
+<text x="756" y="278" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Version 9.15.6755</text>
+<text x="756" y="306" fill="#1f7a4d" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Shortfall is an explicit variable</text>
+<rect x="48" y="356" width="320" height="168" rx="14" fill="#d9e3ec"/>
+<rect x="44" y="352" width="320" height="168" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<rect x="44" y="352" width="8" height="168" rx="4" fill="#1e3a5f"/>
+<text x="68" y="384" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">SQLite record</text>
+<text x="68" y="410" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Events, clocks, lots, plans</text>
+<text x="68" y="432" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Approvals, executions, audit</text>
+<text x="68" y="454" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Outbox in the same transaction</text>
+<text x="68" y="488" fill="#1e3a5f" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">This is the system of record here</text>
+<rect x="392" y="356" width="320" height="168" rx="14" fill="#d9e3ec"/>
+<rect x="388" y="352" width="320" height="168" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<rect x="388" y="352" width="8" height="168" rx="4" fill="#0f5c6b"/>
+<text x="412" y="384" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">In-process bus</text>
+<text x="412" y="410" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Seven industrial.*.v1 topic names</text>
+<text x="412" y="432" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Dedup by immutable event id</text>
+<text x="412" y="454" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Dead letter for a bad schema</text>
+<text x="412" y="488" fill="#0f5c6b" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Not a Kafka broker</text>
+<rect x="736" y="356" width="328" height="168" rx="14" fill="#d9e3ec"/>
+<rect x="732" y="352" width="328" height="168" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<rect x="732" y="352" width="8" height="168" rx="4" fill="#9a6700"/>
+<text x="756" y="384" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Two fixture people</text>
+<text x="756" y="410" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">SYN-USER-PLANNER proposes</text>
+<text x="756" y="432" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">SYN-USER-OPERATOR decides</text>
+<text x="756" y="454" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">compare_digest after a length check</text>
+<text x="756" y="488" fill="#9a6700" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Not an external identity provider</text>
+<rect x="24" y="574" width="1072" height="258" rx="16" fill="#ffffff" stroke="#e1e8ef"/>
+<text x="48" y="606" fill="#9b2c2c" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">TRUST BOUNDARY · NOT CONTACTED ON THIS WORKSTATION</text>
+<text x="48" y="646" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Neo4j</text>
+<text x="48" y="670" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Driver loads only after a local gate</text>
+<text x="48" y="692" fill="#9b2c2c" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">NEO4J_URI unset · not-run</text>
+<text x="48" y="726" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Kafka</text>
+<text x="48" y="750" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Optional confluent-kafka extra</text>
+<text x="48" y="772" fill="#9b2c2c" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Package absent · broker not-run</text>
+<text x="400" y="646" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">PostgreSQL</text>
+<text x="400" y="670" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Adapter exists for a local URL</text>
+<text x="400" y="692" fill="#9b2c2c" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">DATABASE_URL unset · SQLite used</text>
+<text x="400" y="726" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Compose and Grafana</text>
+<text x="400" y="750" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Compose file is an unapplied sketch</text>
+<text x="400" y="772" fill="#9b2c2c" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">No dashboard process was started</text>
+<text x="780" y="646" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Controller</text>
+<text x="780" y="670" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Execution edits a simulated lot</text>
+<text x="780" y="692" fill="#9b2c2c" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">controller_calls stays 0</text>
+<text x="780" y="726" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Remote hosts</text>
+<text x="780" y="750" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">A non-local URL is blocked</text>
+<text x="780" y="772" fill="#9b2c2c" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">The error does not echo the URL</text>
+<text x="780" y="804" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Health reports the gate. It does not dial.</text>
+</svg>

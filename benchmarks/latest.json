@@ -1,0 +1,56 @@
+{
+  "price": "none",
+  "hardware": {
+    "processor": "11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz",
+    "cores": 4,
+    "logical_processors": 8,
+    "python": "3.12.10",
+    "ortools": "9.15.6755",
+    "system": "Windows"
+  },
+  "store": "sqlite",
+  "graph": "in-memory",
+  "adapters": {
+    "neo4j": "not-run",
+    "kafka": "not-run",
+    "postgres": "sqlite-default"
+  },
+  "solver_time_limit_seconds": 5.0,
+  "repeats": 40,
+  "dataset": {
+    "entities": 190,
+    "relationships": 1027,
+    "factories": 3,
+    "suppliers": 8,
+    "warehouses": 3,
+    "machines": 20,
+    "products": 25,
+    "customer_orders": 50,
+    "seed": 7
+  },
+  "graph_query_p95_seconds": 1.1000010999850929e-06,
+  "event_to_plan_p95_seconds": 0.03248310000344645,
+  "event_to_plan_target_seconds": 2.0,
+  "event_to_plan_target_met": true,
+  "solver_wall_seconds": {
+    "min": 0.006554699997650459,
+    "p50": 0.009827199995925184,
+    "max": 0.019852799996442627
+  },
+  "invalid_executed_plans": 0,
+  "invalid_executed_plans_target": 0,
+  "invalid_executed_plans_target_met": true,
+  "scale_in_memory": {
+    "entities": 17000,
+    "relationships": 110000,
+    "build_seconds": 0.17842620000010356,
+    "impact_seconds": 7.110000296961516e-05,
+    "candidate_products": 50,
+    "neo4j": "not-run"
+  },
+  "notes": [
+    "Event-to-plan time is ingest plus solve on the hand scenario after reset.",
+    "The scale graph is in-process. It was not loaded into Neo4j.",
+    "Targets are acceptance bars for this small scenario, not stretch-scale results."
+  ]
+}

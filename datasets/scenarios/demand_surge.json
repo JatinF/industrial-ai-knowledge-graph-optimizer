@@ -1,0 +1,23 @@
+{
+  "id": "demand_surge",
+  "title": "Demand Surge",
+  "factory_id": "PLANT-A",
+  "asset_id": "CO-2001",
+  "on_hand": 14,
+  "inbound": 0,
+  "base_demand": 10,
+  "allow_late": true,
+  "forbid_shortfall": false,
+  "event": {
+    "schema_version": 1,
+    "event_id": "evt-3001",
+    "event_type": "DemandChanged",
+    "occurred_at": "2026-11-13T10:10:00Z",
+    "source_system": "synthetic-erp",
+    "order_id": "CO-2001",
+    "product_id": "PRODUCT-A",
+    "quantity": 20,
+    "reason": "demand_surge",
+    "source_sequence": 1
+  }
+}

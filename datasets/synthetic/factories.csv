@@ -1,0 +1,4 @@
+id,location,status,cost_per_unit
+PLANT-A,harbor,UP,3
+PLANT-B,inland,UP,2
+PLANT-C,south,UP,5

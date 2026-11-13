@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="820" viewBox="0 0 1120 820" role="img" aria-labelledby="depTitle depDesc">
+<title id="depTitle">What ran and what did not</title>
+<desc id="depDesc">This workstation ran Python 3.12.10, an in-memory graph, SQLite, OR-Tools, pytest, and the demo. Docker, Neo4j, Kafka, PostgreSQL, Grafana, and a controller did not run. GitHub Actions is the image and live-adapter proof and is not drawn as already green. No timings are shown.</desc>
+<rect width="1120" height="820" fill="#f4f7fb"/>
+<rect width="1120" height="100" fill="#101820"/>
+<rect y="96" width="1120" height="4" fill="#0f6e6e"/>
+<text x="32" y="38" fill="#7dcec8" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">DEPLOYMENT</text>
+<text x="32" y="72" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="28" font-weight="700">What this workstation ran</text>
+<text x="1088" y="46" fill="#8fe0b8" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="end">Windows · Python 3.12.10</text>
+<text x="1088" y="70" fill="#c5d4e0" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13" text-anchor="end">price none</text>
+<rect x="28" y="132" width="520" height="400" rx="14" fill="#d9e3ec"/>
+<rect x="24" y="128" width="520" height="400" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<rect x="24" y="128" width="520" height="44" rx="14" fill="#1f7a4d"/>
+<rect x="24" y="152" width="520" height="20" fill="#1f7a4d"/>
+<text x="44" y="158" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Ran in this process</text>
+<text x="44" y="204" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Interpreter and solver</text>
+<text x="44" y="230" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Python 3.12.10</text>
+<text x="44" y="252" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">OR-Tools 9.15.6755</text>
+<text x="44" y="274" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">11th Gen Intel Core i7-1185G7</text>
+<text x="44" y="296" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">4 cores · 8 logical processors</text>
+<text x="44" y="330" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Stores the demo used</text>
+<text x="44" y="356" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">In-memory graph, seed 7</text>
+<text x="44" y="378" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">SQLite in process, StaticPool</text>
+<text x="44" y="400" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">In-process topic bus</text>
+<text x="44" y="434" fill="#1f7a4d" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Commands that produced evidence</text>
+<text x="44" y="460" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">ruff, mypy, pytest</text>
+<text x="44" y="482" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">scripts/run_demo.py</text>
+<text x="44" y="504" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">benchmarks/latest.json</text>
+<rect x="576" y="132" width="516" height="400" rx="14" fill="#d9e3ec"/>
+<rect x="572" y="128" width="516" height="400" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<rect x="572" y="128" width="516" height="44" rx="14" fill="#9b2c2c"/>
+<rect x="572" y="152" width="516" height="20" fill="#9b2c2c"/>
+<text x="592" y="158" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Did not run here</text>
+<text x="592" y="204" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Containers</text>
+<text x="592" y="230" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Docker is not installed</text>
+<text x="592" y="252" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">docker build was not run</text>
+<text x="592" y="274" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">docker compose up was not run</text>
+<text x="592" y="308" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Servers</text>
+<text x="592" y="334" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Neo4j, Kafka, and psql are absent</text>
+<text x="592" y="356" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Grafana was not started</text>
+<text x="592" y="378" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">No OpenTelemetry export</text>
+<text x="592" y="412" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Plant</text>
+<text x="592" y="438" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">No ERP, MES, PLM, or IoT system</text>
+<text x="592" y="460" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">No industrial controller</text>
+<text x="592" y="482" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">No screen recording</text>
+<rect x="24" y="548" width="1072" height="244" rx="16" fill="#ffffff" stroke="#e1e8ef"/>
+<text x="48" y="584" fill="#1e3a5f" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">WHERE THE OTHER PROOF IS DEFINED</text>
+<text x="48" y="622" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">GitHub Actions</text>
+<text x="48" y="648" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">ubuntu-24.04 · Python 3.12</text>
+<text x="48" y="670" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">test job: ruff, mypy, pytest</text>
+<text x="48" y="692" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">integration job: Neo4j 5 and Postgres 16</text>
+<text x="48" y="714" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">docker-build job: image and compose config</text>
+<text x="48" y="748" fill="#9a6700" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">A green local pytest does not fill those jobs</text>
+<text x="620" y="622" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Compose sketch</text>
+<text x="620" y="648" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">postgres:16, neo4j:5, apache/kafka:3.9.1</text>
+<text x="620" y="670" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">API allows service DNS on purpose</text>
+<text x="620" y="692" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">That switch stays out of the local demo</text>
+<text x="620" y="726" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">Kafka in CI</text>
+<text x="620" y="752" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">No broker service in the workflow</text>
+</svg>

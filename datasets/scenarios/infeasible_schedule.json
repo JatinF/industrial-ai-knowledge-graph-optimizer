@@ -1,0 +1,12 @@
+{
+  "id": "infeasible_schedule",
+  "title": "Infeasible Schedule",
+  "factory_id": "PLANT-A",
+  "asset_id": "PRESS-220",
+  "on_hand": 4,
+  "inbound": 0,
+  "base_demand": 10,
+  "allow_late": false,
+  "forbid_shortfall": true,
+  "event": null
+}

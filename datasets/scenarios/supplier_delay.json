@@ -1,0 +1,23 @@
+{
+  "id": "supplier_delay",
+  "title": "Supplier Delay",
+  "factory_id": "PLANT-A",
+  "asset_id": "SUP-001",
+  "on_hand": 4,
+  "inbound": 10,
+  "base_demand": 10,
+  "allow_late": true,
+  "forbid_shortfall": false,
+  "event": {
+    "schema_version": 1,
+    "event_id": "evt-2001",
+    "event_type": "SupplierDelayDetected",
+    "occurred_at": "2026-11-13T10:05:00Z",
+    "source_system": "synthetic-erp",
+    "supplier_id": "SUP-001",
+    "material_id": "SEAL-KIT-220",
+    "new_status": "DELAYED",
+    "reason": "port_congestion",
+    "source_sequence": 1
+  }
+}

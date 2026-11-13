@@ -1,0 +1,50 @@
+# Sketch of a local stack. This workstation did not run docker compose.
+# The API container sets INDUSTRIAL_AI_ALLOW_REMOTE so service DNS names are allowed.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: lab
+      POSTGRES_PASSWORD: lab
+      POSTGRES_DB: labdb
+    ports:
+      - "5432:5432"
+  neo4j:
+    image: neo4j:5
+    environment:
+      NEO4J_AUTH: neo4j/lab-password
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+  kafka:
+    image: apache/kafka:3.9.1
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      CLUSTER_ID: 5L6g3nShT-eMCtK--X86sw
+    ports:
+      - "9092:9092"
+  api:
+    build: .
+    environment:
+      INDUSTRIAL_AI_ALLOW_REMOTE: "1"
+      NEO4J_URI: bolt://neo4j:7687
+      NEO4J_USER: neo4j
+      NEO4J_PASSWORD: lab-password
+      DATABASE_URL: postgresql+psycopg://lab:lab@postgres:5432/labdb
+      KAFKA_BOOTSTRAP: kafka:9092
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - neo4j
+      - kafka

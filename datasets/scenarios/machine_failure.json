@@ -1,0 +1,23 @@
+{
+  "id": "machine_failure",
+  "title": "Machine Failure",
+  "factory_id": "PLANT-A",
+  "asset_id": "PRESS-220",
+  "on_hand": 14,
+  "inbound": 0,
+  "base_demand": 10,
+  "allow_late": true,
+  "forbid_shortfall": false,
+  "event": {
+    "schema_version": 1,
+    "event_id": "evt-1001",
+    "event_type": "MachineFailureDetected",
+    "occurred_at": "2026-11-13T10:00:00Z",
+    "source_system": "synthetic-mes",
+    "factory_id": "PLANT-A",
+    "machine_id": "PRESS-220",
+    "new_status": "DOWN",
+    "reason": "hydraulic_pressure_fault",
+    "source_sequence": 2
+  }
+}
