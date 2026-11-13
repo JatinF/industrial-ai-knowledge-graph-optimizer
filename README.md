@@ -135,7 +135,9 @@ A separate in-memory scale graph built 17,000 entities and 110,000 relationships
 
 Local quality commands on this tree, before publication: ruff clean, mypy clean on the `industrial_ai` package, pytest 35 passed and 2 skipped. The skips are `tests/integration/test_live_adapters.py` because `NEO4J_URI` and `DATABASE_URL` were unset. Those commands do not start Docker.
 
-GitHub Actions is defined to run ruff, mypy, and pytest; a Neo4j 5 and PostgreSQL 16 job; a Docker image build; and a private-key scan. This workstation did not run those jobs. A green local pytest does not fill them. Annotation lists are recorded only after the check-run API returns them.
+On commit `d668970`, GitHub Actions run [43367549006](https://github.com/JatinF/industrial-ai-knowledge-graph-optimizer/actions/runs/43367549006) succeeded. The jobs were test (check run 131695413138), docker-build (check run 131695413520), and integration (check run 131695413614). Security run [43367548902](https://github.com/JatinF/industrial-ai-knowledge-graph-optimizer/actions/runs/43367548902) succeeded. The scan job was check run 131695413124. Annotation lists for those four check runs returned `[]`.
+
+The integration job contacted Neo4j 5 and PostgreSQL 16 on that runner. This workstation did not. Docker is not installed here, so the local image build stayed not-run. The image proof is the Actions `docker-build` job. A green local pytest does not replace that job.
 
 There is no screen recording. The transcript above is the demonstration.
 

@@ -36,7 +36,9 @@ The integration job uses `bolt://localhost:7687` with user `neo4j` and password 
 
 `.github/workflows/security.yml` runs `scripts/reject_private_keys.py`. There is no Kafka service in CI.
 
-Actions results belong in the README evidence section only after a run is green and the annotation API has been read. A local pytest pass is not that evidence.
+On commit `d668970`, ci run 43367549006 succeeded and security run 43367548902 succeeded. Job conclusions were success for test (check run 131695413138), docker-build (check run 131695413520), integration (check run 131695413614), and scan (check run 131695413124). Annotation lists for those four check runs returned `[]`.
+
+That docker-build job is the image proof. Compose was still not started. A local pytest pass is not a substitute for those jobs.
 
 ## Gates
 
